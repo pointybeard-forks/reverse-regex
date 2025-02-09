@@ -2,7 +2,7 @@
 <phpunit colors="true" stopOnFailure="false" bootstrap="vendor/autoload.php">
      <testsuites>
          <testsuite name="UnitTests For ReverseRegex">
-            <directory>./src/ReverseRegex/Test/</directory>
+            <directory>./tests</directory>
         </testsuite>
   </testsuites>  
     

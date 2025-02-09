@@ -1,0 +1,14 @@
+parameters:
+  level: 9
+  reportMaybesInPropertyPhpDocTypes: false
+  treatPhpDocTypesAsCertain: false
+
+  paths:
+    - src/
+    - examples/
+    - tests/
+
+  excludePaths:
+    - vendor
+
+

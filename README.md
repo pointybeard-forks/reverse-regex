@@ -1,16 +1,18 @@
-# ReverseRegex
-
-[![Build Status](https://api.travis-ci.com/pointybeard-forks/ReverseRegex.svg)](https://app.travis-ci.com/github/pointybeard-forks/ReverseRegex)
+# Reverse Regex
 
 Use Regular Expressions to generate strings.
 
--   [Installation](#installation)
--   [Usage](#usage)
--   [About](#about)
-    -   [Requirements](#dependencies)
--   [Support](#support)
--   [Contributing](#contributing)
--   [License](#license)
+- [Reverse Regex](#reverse-regex)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Notes When Writing Regular Expressions](#notes-when-writing-regular-expressions)
+    - [Supported Syntax](#supported-syntax)
+  - [About](#about)
+    - [Requirements](#requirements)
+  - [Support](#support)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
+  - [License](#license)
 
 ## Installation
 
@@ -23,10 +25,10 @@ This library is installed via [Composer](http://getcomposer.org/). To install, u
 
 declare(strict_types=1);
 
-use ReverseRegex\Lexer;
-use ReverseRegex\Random\SimpleRandom;
-use ReverseRegex\Parser;
-use ReverseRegex\Generator\Scope;
+use pointybeard\ReverseRegex\Lexer;
+use pointybeard\ReverseRegex\Random\SimpleRandom;
+use pointybeard\ReverseRegex\Parser;
+use pointybeard\ReverseRegex\Generator\Scope;
 
 require "vendor/autoload.php";
 
@@ -46,7 +48,7 @@ var_dump($generator->generate($result, $random));
 
 ```
 
-See <https://github.com/pointybeard-forks/ReverseRegex/tree/master/examples> for more examples.
+See <https://github.com/pointybeard-forks/reverse-regex/tree/master/examples> for more examples.
 
 ### Notes When Writing Regular Expressions
 
@@ -82,7 +84,7 @@ See <https://github.com/pointybeard-forks/ReverseRegex/tree/master/examples> for
 
 ### Requirements
 
-- This library works with PHP 7.2 or above.
+- This library works with PHP 8.2 or above.
 
 ## Support
 
@@ -90,13 +92,19 @@ If you believe you have found a bug, please report it using the [GitHub issue tr
 
 ## Author
 
-- Lewis Dyer (<http://www.icomefromthenet.com>, <https://github.com/icomefromthenet/ReverseRegex>) - Original author
 - Alannah Kearney (<https://github.com/pointybeard>) - Fixed a few things after library was abandoned
 - See also the list of [contributors][ext-contributor] who participated in this project
 
+## Acknowledgments
+
+This project is a fork of [ReverseRegex](https://github.com/icomefromthenet/ReverseRegex) by [icomefromthenet](https://github.com/icomefromthenet).
+
+Special thanks to the original author for their foundational work on this library.
+
 ## License
-"ReverseRegex" is released under the MIT License. See [LICENCE][doc-LICENCE] for details.
+
+"reverse-regex" is released under the MIT License. See [LICENCE][doc-LICENCE] for details.
 
 [doc-LICENCE]: http://www.opensource.org/licenses/MIT
-[ext-issues]: https://github.com/pointybeard/ReverseRegex/issues
-[ext-contributor]: https://github.com/pointybeard/ReverseRegex/contributors
+[ext-issues]: https://github.com/pointybeard-forks/reverse-regex/issues
+[ext-contributor]: https://github.com/pointybeard-forks/reverse-regex/contributors
